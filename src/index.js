@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const bencode = require('bencode')
-const tracker = require('./tracker');
+const tracker = require('./utils/tracker');
 
 const torrent = bencode.decode(fs.readFileSync('puppy.torrent'));
 
